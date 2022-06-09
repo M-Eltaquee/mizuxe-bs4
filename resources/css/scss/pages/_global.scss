@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding-top: 108px;
+  .info-header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    @include query(md-max) {
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+    @include query(xs) {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

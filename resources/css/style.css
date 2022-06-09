@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding-top: 108px; }
+  body .info-header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 1px solid #ddd; }
+    @media (max-width: 991.98px) {
+      body .info-header h2 {
+        font-size: 1.75rem; } }
+    @media (max-width: 575.98px) {
+      body .info-header h2 {
+        font-size: 1.5rem; } }
+
+.navbar.bg-light {
+  box-shadow: 2px 2px 5px #3292a6;
+  background-color: #fff;
+  opacity: 0.8; }
+  .navbar.bg-light .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+    text-align: start; }
+
+section#showcase {
+  background-image: url(/resources/img/mountains.jpg);
+  background-size: cover;
+  background-position: center center; }
+  section#showcase .overlay {
+    background-color: rgba(50, 146, 166, 0.8); }
+  @media (max-width: 1199.98px) {
+    section#showcase {
+      max-height: 600px; }
+      section#showcase .display-2 {
+        font-size: 4.5rem; } }
+  @media (max-width: 575.98px) {
+    section#showcase {
+      max-height: 600px; }
+      section#showcase .display-2 {
+        font-size: 3rem; } }
+
+section#boxes .box {
+  text-align: start; }
+
+section#newsletter .subscribe form {
+  gap: 20px; }
+  section#newsletter .subscribe form .form-group {
+    margin-bottom: unset;
+    flex: 1; }
+    section#newsletter .subscribe form .form-group input {
+      width: 100%; }
+      section#newsletter .subscribe form .form-group input[type='submit'] {
+        background-color: #3292a6;
+        color: #fff; }
+  @media (max-width: 991.98px) {
+    section#newsletter .subscribe form {
+      flex-direction: column;
+      gap: 10px; }
+      section#newsletter .subscribe form .form-group {
+        width: 80%; } }
+
+section#authors .author-box .card-body {
+  padding-top: 0; }
+  section#authors .author-box .card-body img {
+    transform: translateY(-50%);
+    margin-bottom: -36px; }
+  section#authors .author-box .card-body .social i {
+    font-size: 1.5rem; }
+  section#authors .author-box .card-body:hover {
+    background-color: #3292a6; }
+    section#authors .author-box .card-body:hover p,
+    section#authors .author-box .card-body:hover i,
+    section#authors .author-box .card-body:hover h3 {
+      color: #fff !important; }
+@media (max-width: 1199.98px) {
+  section#authors h3 {
+    font-size: 1.5rem; } }
+@media (max-width: 991.98px) {
+  section#authors .author-box {
+    margin-bottom: 100px; } }
+@media (max-width: 767.98px) {
+  section#authors .author-box {
+    margin-bottom: 150px; }
+    section#authors .author-box img {
+      max-width: 150px; } }
+@media (max-width: 575.98px) {
+  section#authors .author-box {
+    margin-bottom: 110px; } }
+
+section#contact h3,
+section#contact p {
+  text-align: start; }
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */

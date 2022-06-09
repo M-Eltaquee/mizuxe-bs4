@@ -1,0 +1,48 @@
+/// overlay mixin
+// @param{param} takes color
+// return full proprties
+
+@mixin overlay($color) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color;
+}
+
+@mixin query($size) {
+  @if $size == 'xs' {
+    @media #{$xs} {
+      @content;
+    }
+  } @else if $size == 'sm-min' {
+    @media #{$sm-min} {
+      @content;
+    }
+  } @else if $size == 'sm-max' {
+    @media #{$sm-max} {
+      @content;
+    }
+  } @else if $size == 'md-min' {
+    @media #{$md-min} {
+      @content;
+    }
+  } @else if $size == 'md-max' {
+    @media #{$md-max} {
+      @content;
+    }
+  } @else if $size == 'lg-min' {
+    @media #{$lg-min} {
+      @content;
+    }
+  } @else if $size == 'lg-max' {
+    @media #{$lg-max} {
+      @content;
+    }
+  } @else if $size == 'xl' {
+    @media #{$xl} {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  padding-top: 108px; }
+  body .info-header {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: 1px solid #ddd; }
+    @media (max-width: 991.98px) {
+      body .info-header h2 {
+        font-size: 1.75rem; } }
+    @media (max-width: 575.98px) {
+      body .info-header h2 {
+        font-size: 1.5rem; } }
+
+body {
+  font-family: 'Mirza', cursive; }
+
+.navbar.bg-light {
+  box-shadow: 2px 2px 5px #3292a6;
+  background-color: #fff;
+  opacity: 0.8; }
+  .navbar.bg-light .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+    text-align: start; }
+
+.navbar .navbar-nav {
+  margin-left: unset !important;
+  margin-right: auto !important; }
+  @media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+      text-align: start; } }
+
+footer .col-md-6 {
+  margin-left: unset !important;
+  margin-right: auto !important; }
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style-rtl.css.map */

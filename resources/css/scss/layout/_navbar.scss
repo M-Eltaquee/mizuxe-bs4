@@ -1,0 +1,10 @@
+.navbar.bg-light {
+  box-shadow: 2px 2px 5px $primary;
+  background-color: #fff;
+  opacity: 0.8;
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+    text-align: start;
+  }
+}

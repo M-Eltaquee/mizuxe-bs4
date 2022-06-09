@@ -1,0 +1,32 @@
+/// import google fonts for Arabic
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap');
+// import variables
+@import './helpers/variables';
+// import mixin file
+@import './helpers/mixin';
+//import global file
+@import './pages/global';
+body {
+  font-family: 'Mirza', cursive;
+}
+// import navbar
+@import './layout/navbar';
+.navbar {
+  .navbar-nav {
+    margin-left: unset !important;
+    margin-right: auto !important;
+    @include query(md-max) {
+      text-align: start;
+    }
+  }
+}
+
+// import footer
+@import './layout/footer';
+footer {
+  .col-md-6 {
+    margin-left: unset !important;
+    margin-right: auto !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

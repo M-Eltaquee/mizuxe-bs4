@@ -1,0 +1,103 @@
+section#showcase {
+  background-image: url(/resources/img/mountains.jpg);
+  background-size: cover;
+  background-position: center center;
+  .overlay {
+    background-color: $primary-overlay;
+  }
+  @include query(lg-max) {
+    max-height: 600px;
+    .display-2 {
+      font-size: 4.5rem;
+    }
+  }
+
+  @include query(xs) {
+    max-height: 600px;
+    .display-2 {
+      font-size: 3rem;
+    }
+  }
+}
+section#boxes {
+  .box {
+    text-align: start;
+  }
+}
+section#newsletter {
+  .subscribe {
+    form {
+      gap: 20px;
+      .form-group {
+        margin-bottom: unset;
+        flex: 1;
+        input {
+          width: 100%;
+          &[type='submit'] {
+            background-color: $primary;
+            color: #fff;
+          }
+        }
+      }
+      @include query(md-max) {
+        flex-direction: column;
+        gap: 10px;
+        .form-group {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+section#authors {
+  .author-box {
+    .card-body {
+      padding-top: 0;
+      img {
+        transform: translateY(-50%);
+        margin-bottom: -36px;
+      }
+      .social i {
+        font-size: 1.5rem;
+      }
+      &:hover {
+        background-color: $primary;
+
+        p,
+        i,
+        h3 {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+  @include query(lg-max) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  @include query(md-max) {
+    .author-box {
+      margin-bottom: 100px;
+    }
+  }
+  @include query(sm-max) {
+    .author-box {
+      margin-bottom: 150px;
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+  @include query(xs) {
+    .author-box {
+      margin-bottom: 110px;
+    }
+  }
+}
+section#contact {
+  h3,
+  p {
+    text-align: start;
+  }
+}
